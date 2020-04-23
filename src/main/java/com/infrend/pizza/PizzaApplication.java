@@ -1,13 +1,13 @@
-package com.gp.Generalpractitioner;
+package com.infrend.pizza;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GeneralpractitionerApplication {
+public class PizzaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GeneralpractitionerApplication.class, args);
+		SpringApplication.run(PizzaApplication.class, args);
 	}
 	
 }

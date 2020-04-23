@@ -1,4 +1,4 @@
-package com.gp.Generalpractitioner.Model;
+package com.infrend.pizza.Model;
 
 
 

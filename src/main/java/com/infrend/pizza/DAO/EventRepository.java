@@ -1,11 +1,11 @@
-package com.gp.Generalpractitioner.DAO;
+package com.infrend.pizza.DAO;
 
 import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.gp.Generalpractitioner.Model.Event;
+import com.infrend.pizza.Model.Event;
 
 
 public interface EventRepository extends JpaRepository<Event, Integer>{

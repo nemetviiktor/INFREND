@@ -1,4 +1,4 @@
-package com.gp.Generalpractitioner.Controller;
+package com.infrend.pizza.Controller;
 
 import java.sql.Date;
 import java.util.List;
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.gp.Generalpractitioner.DAO.EventRepository;
-import com.gp.Generalpractitioner.DAO.OrderingHoursRepository;
-import com.gp.Generalpractitioner.Model.Event;
-import com.gp.Generalpractitioner.Model.OrderingHours;
+import com.infrend.pizza.DAO.EventRepository;
+import com.infrend.pizza.DAO.OrderingHoursRepository;
+import com.infrend.pizza.Model.Event;
+import com.infrend.pizza.Model.OrderingHours;
 
 
 @Controller
