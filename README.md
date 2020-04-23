@@ -1,4 +1,4 @@
-6. Pizza rendelések
+Pizza rendelések
 
 Általános leírás
 
