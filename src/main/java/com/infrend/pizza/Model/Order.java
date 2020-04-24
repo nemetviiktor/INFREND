@@ -16,17 +16,17 @@ public class Order {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int Id;
 	
-	@Column(name="customerName")
-	private String customerName;
+	@Column(name="customername")
+	private String customername;
 	
-	@Column(name="food")
-	private String food;
+	@Column(name="foodid")
+	private int foodid;
 	
 	@Column(name="total")
 	private int total;
 	
-	@Column(name="deliveryTime")
-	private int deliveryTime;
+	@Column(name="deliverytime")
+	private int deliverytime;
 
 	public int getId() {
 		return Id;
@@ -36,20 +36,20 @@ public class Order {
 		Id = id;
 	}
 
-	public String getCustomerName() {
-		return customerName;
+	public String getCustomername() {
+		return customername;
 	}
 
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
+	public void setCustomername(String customername) {
+		this.customername = customername;
 	}
 
-	public String getFood() {
-		return food;
+	public int getFoodid() {
+		return foodid;
 	}
 
-	public void setFood(String food) {
-		this.food = food;
+	public void setFoodid(int foodid) {
+		this.foodid = foodid;
 	}
 
 	public int getTotal() {
@@ -60,11 +60,11 @@ public class Order {
 		this.total = total;
 	}
 
-	public int getDeliveryTime() {
-		return deliveryTime;
+	public int getDeliverytime() {
+		return deliverytime;
 	}
 
-	public void setDeliveryTime(int deliveryTime) {
-		this.deliveryTime = deliveryTime;
+	public void setDeliverytime(int deliverytime) {
+		this.deliverytime = deliverytime;
 	}
 }
