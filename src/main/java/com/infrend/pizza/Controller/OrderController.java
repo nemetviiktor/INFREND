@@ -39,10 +39,23 @@ public class OrderController {
 		
 	}
 	
+	public List<Order> getOrder() {
+		List<Order> order = orderRepository.findAll();
+		
+		return order;
+		
+	}
+	
 	@RequestMapping(value="/showMenu",method=RequestMethod.GET)
 	public String getAllMenu(Model model) {
 		model.addAttribute("menu",getMenu());
 		return "menu.jsp";
+	}
+	
+	@RequestMapping(value="/showOrder",method=RequestMethod.GET)
+	public String getAllOrder(Model model) {
+		model.addAttribute("order",getOrder());
+		return "order.jsp";
 	}
 	
 	@RequestMapping(value="/selectedMenu", method=RequestMethod.GET )
@@ -55,7 +68,7 @@ public class OrderController {
 	}
 	
 	@RequestMapping("/addOrder")
-	public String addItem(Order order){
+	public String addOrder(Order order){
 		
 		orderRepository.save(order);
 		

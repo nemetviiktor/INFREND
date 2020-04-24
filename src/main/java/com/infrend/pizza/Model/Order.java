@@ -8,8 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="order")
-public class Order {
+@Table(name="orders")
+public class Order{
 	
 	@Id
 	@Column(name="id")
@@ -20,13 +20,13 @@ public class Order {
 	private String customername;
 	
 	@Column(name="foodid")
-	private int foodid;
+	private String foodid;
 	
 	@Column(name="total")
-	private int total;
-	
+	private String total;
+
 	@Column(name="deliverytime")
-	private int deliverytime;
+	private String deliverytime;
 
 	public int getId() {
 		return Id;
@@ -44,27 +44,33 @@ public class Order {
 		this.customername = customername;
 	}
 
-	public int getFoodid() {
+	public String getFoodid() {
 		return foodid;
 	}
 
-	public void setFoodid(int foodid) {
+	public void setFoodid(String foodid) {
 		this.foodid = foodid;
 	}
 
-	public int getTotal() {
+	public String getTotal() {
 		return total;
 	}
 
-	public void setTotal(int total) {
+	public void setTotal(String total) {
 		this.total = total;
 	}
 
-	public int getDeliverytime() {
+	public String getDeliverytime() {
 		return deliverytime;
 	}
 
-	public void setDeliverytime(int deliverytime) {
+	public void setDeliverytime(String deliverytime) {
 		this.deliverytime = deliverytime;
+	}
+
+	@Override
+	public String toString() {
+		return "Order [Id=" + Id + ", customername=" + customername + ", foodid=" + foodid + ", total=" + total
+				+ ", deliverytime=" + deliverytime + "]";
 	}
 }
