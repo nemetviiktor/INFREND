@@ -14,8 +14,8 @@
 		<table>
             <tr>
                 <td><h3>Vásárló neve: </h3><p><input type="text" name="customername" required id="customername"/></p></td>
-                <td><h3>Étel azonosító: </h3><p><input type="text" name="foodid" required id="foodid"/></p></td>
-                <td><h3>Végösszeg: </h3><p><input type="text" name="total" required id="total"/></p></td>
+                <input type="hidden" name="foodid" id="foodid" value= "${menu.id}"/>
+                <input type="hidden" name="total" id="total" value= "${menu.price}"/>
                 <td><h3>Szállítási idő: </h3><p><input type="text" name="deliverytime" required id="deliverytime"/></p></td>
             </tr>
             <tr>
